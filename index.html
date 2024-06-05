@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <script src="assets/js/contact.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="contactform">
+      <div class="contact-us">
+        <h1>Contact Us</h1>
+      </div>
+
+      <form class="contact-form">
+
+        <div class="nameLastName">
+
+          <div class="Name">
+            <div class="nametext">
+              <h3>Name</h3>
+            </div>
+            <input type="text" id="name" placeholder="First Name" autocomplete="off" required />
+          </div>
+          <div class="divlastName">
+            <div class="lastnametext">
+              <h3>Last Name</h3>
+            </div>
+            <input type="text" id="lastName" placeholder="Last Name" autocomplete="off" required />
+          </div>
+        </div>
+
+        <div class="divEmail">
+          <div class="emailtext">
+            <h3>Email Address</h3>
+          </div>
+          <input type="email" id="eMailInput" placeholder="email@example.com" autocomplete="off" required />
+        </div>
+
+
+        <div class="query-type">
+          <h3>Query Type</h3>
+          <div class="radios">
+            <div class="divRadio1">
+              <label>
+                <input type="radio" value="1" id="radio" name="queryType" required /> General Enquiry
+              </label>
+            </div>
+            <div class="divRadio1">
+              <label>
+                <input type="radio" value="2" id="radio" name="queryType" required /> Support Request
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="message">
+
+          <div class="message-text">
+            
+            <h3>Message</h3>
+          </div>
+          <textarea class="textarea1"  rows="5" cols="40" autocomplete="off" placeholder="Your message here" required></textarea>
+        </div>
+
+        <div class="checkBoxApprove">
+          <input id="Approve" type="checkbox" required />
+          <label>I consent to being contacted by the team  </label>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  <div class="formOutput">
+
+    <div class="outputfName">
+      <h3>İsminiz :</h3>
+      <p class="fNameOutput"></p>
+    </div>
+
+    <div class="outputlName">
+      <h3>Soy isminiz :</h3>
+      <p class="lNameOutput"></p>
+    </div>
+
+    <div class="outputEmail">
+      <h3>E-posta Adresiniz :</h3>
+      <p class="emailOutput"></p>
+    </div>
+
+    <div class="outputMessage">
+      <h3>Mesajınız :</h3>
+      <p class="messageOutput"></p>
+    </div>
+
+    <div class="query">
+      <h3>Tercihiniz :</h3>
+      <p class="queryOutput"></p>
+    </div>
+  </div>
+
+</body>
+</html>
